@@ -1,0 +1,609 @@
+/* ---------- Layout shell ---------- */
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px 24px;
+}
+
+/* ---------- Sidebar / nav ---------- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 18px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--sidebar-border);
+}
+
+.navbar-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
+.navbar-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14.5px;
+  line-height: 1.25;
+}
+
+.navbar-title span {
+  display: block;
+  color: var(--sidebar-text-dim);
+  font-weight: 500;
+  font-size: 12.5px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--sidebar-text);
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover {
+  background: var(--sidebar-bg-alt);
+  color: #fff;
+}
+
+.nav-link.active {
+  background: var(--sidebar-bg-alt);
+  border-color: var(--sidebar-border);
+  color: #fff;
+}
+
+.nav-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.nav-dot-green {
+  background: #22c55e;
+}
+
+.nav-dot-white {
+  background: #f8fafc;
+  border: 1px solid #64748b;
+}
+
+.nav-dot-grey {
+  background: #94a3b8;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.footer-text {
+  color: var(--text);
+  font-size: 13px;
+}
+
+/* ---------- Home page ---------- */
+
+.home-hero {
+  text-align: center;
+  padding: 24px 0 36px;
+}
+
+.home-logo {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.home-hero p {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.home-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--accent);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.home-card h2 {
+  color: var(--text-h);
+}
+
+.home-card p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.home-card-green {
+  border-top-color: #22c55e;
+}
+
+.home-card-white {
+  border-top-color: #94a3b8;
+}
+
+.home-card-grey {
+  border-top-color: #475569;
+}
+
+/* ---------- Shared utility classes used in pages ---------- */
+
+.p-6 {
+  padding: 24px;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mt-6 {
+  margin-top: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.text-xl {
+  font-size: 22px;
+}
+
+.text-lg {
+  font-size: 17px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.border {
+  border: 1px solid var(--border);
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+/* ---------- Buttons ---------- */
+
+.toggle-button,
+.calendar-btn,
+.hudl-btn,
+.print-btn,
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.toggle-button:hover,
+.calendar-btn:hover,
+.hudl-btn:hover,
+.print-btn:hover,
+.download-btn:hover {
+  background: var(--accent-dark);
+}
+
+.calendar-btn {
+  background: #475569;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  margin: 2px;
+}
+
+.calendar-btn:hover {
+  background: #334155;
+}
+
+.hudl-btn {
+  background: #ea580c;
+  padding: 6px 10px;
+  font-size: 12.5px;
+}
+
+.hudl-btn:hover {
+  background: #c2410c;
+}
+
+.print-btn,
+.download-btn {
+  background: var(--surface);
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  margin-right: 8px;
+}
+
+.print-btn:hover,
+.download-btn:hover {
+  background: var(--bg);
+}
+
+select {
+  font: inherit;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-h);
+}
+
+/* ---------- Schedule view ---------- */
+
+.schedule-view-container h2 {
+  color: var(--text-h);
+}
+
+.next-game-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 16px 0 24px;
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+}
+
+.next-game-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+  border: 1px solid var(--border);
+}
+
+.location-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.location-link:hover {
+  text-decoration: underline;
+}
+
+.home-game {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.away-game {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 16px 0;
+  background: var(--surface);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background: var(--bg);
+  color: var(--text-h);
+  font-weight: 600;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.schedule-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.schedule-table tr:last-child td {
+  border-bottom: none;
+}
+
+.schedule-table tr:hover td {
+  background: var(--accent-bg);
+}
+
+.schedule-table tr.past-game td {
+  opacity: 0.55;
+}
+
+.team-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.playcard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.playcard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid #ea580c;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-h);
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+}
+
+.playcard:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Roster ---------- */
+
+.roster {
+  text-align: left;
+}
+
+.roster h1 {
+  text-align: center;
+}
+
+.roster ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.roster li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14.5px;
+  color: var(--text-h);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.roster .number {
+  display: inline-flex;
+  min-width: 32px;
+  height: 26px;
+  padding: 0 6px;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* ---------- Dark mode (toggled on body via ScheduleView) ---------- */
+
+body.dark-mode {
+  --text: #cbd3e1;
+  --text-h: #f5f7fb;
+  --bg: #0b0e14;
+  --surface: #171e2c;
+  --border: #2a3242;
+  --accent-bg: rgba(34, 197, 94, 0.12);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 14px 16px;
+  }
+
+  .navbar-brand {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  .content-area {
+    margin-left: 0;
+  }
+
+  .page-content {
+    padding: 24px 16px;
+  }
+}
+
+/* ---------- Mobile hardening ---------- */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.next-game-card .flex {
+  flex-wrap: wrap;
+}
+
+.next-game-logo {
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 20px 14px;
+  }
+
+  .home-hero {
+    padding: 12px 0 24px;
+  }
+
+  .home-logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .navbar-brand {
+    gap: 8px;
+  }
+
+  .navbar-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-link {
+    padding: 10px 14px;
+    min-height: 40px;
+  }
+
+  .calendar-btn,
+  .hudl-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+    min-height: 36px;
+  }
+
+  .toggle-button,
+  .print-btn,
+  .download-btn {
+    min-height: 40px;
+  }
+}
