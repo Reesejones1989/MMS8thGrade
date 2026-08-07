@@ -249,15 +249,24 @@ END:VCALENDAR`.trim();
                     key={index}
                     className={isPast ? "past-game" : ""}
                   >
-                    <td>{game.game}</td>
+                    <td data-label="Game">{game.game}</td>
 
-                    <td>{game.date}</td>
+                    <td data-label="Date">{game.date}</td>
 
-                    <td>{game.opponent}</td>
+                    <td data-label="Opponent">
+                      <span className="opponent-value">
+                        <img
+                          src={game.logo}
+                          alt={`${game.opponent} logo`}
+                          className="opponent-logo"
+                        />
+                        {game.opponent}
+                      </span>
+                    </td>
 
-                    <td>{game.time}</td>
+                    <td data-label="Time">{game.time}</td>
 
-                    <td>
+                    <td data-label="Location">
                       <a
                         href={getMapLink(game.location)}
                         target="_blank"
@@ -269,6 +278,7 @@ END:VCALENDAR`.trim();
                     </td>
 
                     <td
+                      data-label="Home/Away"
                       className={
                         isHomeGame(game.location)
                           ? "home-game"
@@ -280,7 +290,7 @@ END:VCALENDAR`.trim();
                         : "Away"}
                     </td>
 
-                    <td>
+                    <td data-label="Logo" className="logo-cell">
                       <img
                         src={game.logo}
                         alt={`${game.opponent} logo`}
@@ -288,7 +298,7 @@ END:VCALENDAR`.trim();
                       />
                     </td>
 
-                    <td>
+                    <td data-label="Calendar">
                       <button
                         className="calendar-btn"
                         onClick={() =>
@@ -309,7 +319,7 @@ END:VCALENDAR`.trim();
                       </button>
                     </td>
 
-                    <td>
+                    <td data-label="Hudl Film">
                       {game.hudl && (
                         <button
                           className="hudl-btn"

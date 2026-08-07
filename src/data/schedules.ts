@@ -125,7 +125,7 @@ const schedules: Schedule = {
       date: "8/11",
       opponent: "Centerville",
       time: "5:45",
-      location: "",
+      location: "Mason Elementary",
       logo:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNtelwuVH_Z8Zkr0WS8Bch2aDldj2se0i7Q&s",
       masonScore: "",

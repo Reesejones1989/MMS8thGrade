@@ -428,6 +428,16 @@ select {
   object-fit: contain;
 }
 
+.opponent-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.opponent-logo {
+  display: none;
+}
+
 .playcard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -605,5 +615,89 @@ body {
   .print-btn,
   .download-btn {
     min-height: 40px;
+  }
+}
+
+/* ---------- Schedule table -> stacked cards on mobile ---------- */
+
+@media (max-width: 700px) {
+  .table-wrapper {
+    overflow-x: visible;
+    border: none;
+    background: transparent;
+  }
+
+  .schedule-table {
+    display: block;
+  }
+
+  .schedule-table thead {
+    display: none;
+  }
+
+  .schedule-table tbody {
+    display: block;
+  }
+
+  .schedule-table tr {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 12px;
+    padding: 4px 12px;
+  }
+
+  .schedule-table tr.past-game {
+    opacity: 0.6;
+  }
+
+  .schedule-table td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    text-align: right;
+    white-space: normal;
+  }
+
+  .schedule-table tr:hover td {
+    background: transparent;
+  }
+
+  .schedule-table td:last-child {
+    border-bottom: none;
+  }
+
+  .schedule-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    font-size: 12.5px;
+    color: var(--text-h);
+    text-align: left;
+    flex-shrink: 0;
+  }
+
+  .schedule-table td.logo-cell {
+    display: none;
+  }
+
+  .opponent-logo {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .schedule-table td[data-label="Calendar"] {
+    justify-content: flex-end;
+    gap: 8px;
   }
 }
