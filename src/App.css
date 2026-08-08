@@ -392,6 +392,7 @@ select {
 .location-link {
   color: var(--accent);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .location-link:hover {

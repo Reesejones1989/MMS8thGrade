@@ -90,15 +90,22 @@ const NextGameCard = ({
             <p>
               <strong>Location: </strong>
 
-              <a
-                href={getMapLink(nextGame.location)}
-                target="_blank"
-                rel="noopener noreferrer"
+              <span
+                role="link"
+                tabIndex={0}
                 className="location-link"
-                onClick={(e) => e.stopPropagation()}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open(
+                    getMapLink(nextGame.location),
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }}
               >
                 {nextGame.location}
-              </a>
+              </span>
             </p>
 
             <p
