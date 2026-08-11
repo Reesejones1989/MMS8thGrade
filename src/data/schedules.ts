@@ -87,10 +87,23 @@ const schedules: Schedule = {
       hudl:
         "",
     },
+          {
+      game: "Game 7",
+      date: "9/24",
+      opponent: "Plains",
+      time: "5:30",
+      location: "Dwire Field",
+      logo:
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1640868218/lakotaonlinecom/icntz70fi8t6an6ionyb/Plains.eps",
+      masonScore: "",
+      opponentScore: "",
+      hudl:
+        "",
+    },
 
        {
       game: "Game 7",
-      date: "10/01",
+      date: "09/30",
       opponent: "Hamilton",
       time: "5:30",
       location: "Hamilton High School",
@@ -147,8 +160,8 @@ const schedules: Schedule = {
       game: "Game 2",
       date: "8/25",
       opponent: "Hamilton",
-      time: "?",
-      location: "?",
+      time: "5:30",
+      location: "Garfield Middle School",
       logo:
         "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1647812472/hamiltoncityschoolscom/no0jthbovtpbcta2zmye/BlueH-BlackOutline-BlackScript-WhiteOutline.png",
       masonScore: "",
