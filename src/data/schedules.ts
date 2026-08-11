@@ -87,20 +87,7 @@ const schedules: Schedule = {
       hudl:
         "",
     },
-          {
-      game: "Game 7",
-      date: "9/24",
-      opponent: "Plains",
-      time: "5:30",
-      location: "Dwire Field",
-      logo:
-        "https://resources.finalsite.net/images/f_auto,q_auto/v1640868218/lakotaonlinecom/icntz70fi8t6an6ionyb/Plains.eps",
-      masonScore: "",
-      opponentScore: "",
-      hudl:
-        "",
-    },
-
+    
        {
       game: "Game 7",
       date: "09/30",
@@ -129,7 +116,6 @@ const schedules: Schedule = {
         "",
     },
 
-    // Continue remaining Green games exactly as before...
   ],
 
   white: [
@@ -227,7 +213,6 @@ const schedules: Schedule = {
     },
   
 
-    // Continue remaining White schedule exactly as before...
   ],
 };
 
