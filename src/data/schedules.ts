@@ -6,7 +6,7 @@ const schedules: Schedule = {
       game: "Scrimmage",
       date: "8/13",
       opponent: "Liberty",
-      time: "4:30",
+      time: "5:30",
       location: "Dwire Field",
       logo:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmIsAL9u_nnjR1JyRfCbLYKNy3UE-YZkSqURl16W9QYg&s=10",
