@@ -135,7 +135,7 @@ const schedules: Schedule = {
       date: "8/18",
       opponent: "Lebanon B",
       time: "4:45",
-      location: "Mason Elementary",
+      location: "Lebanon High School",
       logo:
         "https://pbs.twimg.com/profile_images/1779961045525622784/XWltGCnu_400x400.jpg",
       masonScore: "",
