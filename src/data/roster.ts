@@ -6,7 +6,7 @@ export interface Player {
 
 const players: Player[] = [
   { number: null, first: "Brady", last: "Anderson" },
-  { number: null, first: "Cristiano", last: "Black" },
+  { number: 13, first: "Cristiano", last: "Black" },
   { number: null, first: "Cooper", last: "Brock" },
   { number: 22, first: "Victor", last: "Casique" },
   { number: null, first: "William", last: "Davis" },

@@ -46,6 +46,22 @@ const ScheduleView = ({ team }: ScheduleViewProps) => {
     return new Date(year, month - 1, day, hour, minute);
   };
 
+  const hasGameStarted = (game: Game): boolean =>
+    parseDateTime(game.date, game.time) <= today;
+
+  const getGameResult = (game: Game): "W" | "L" | "T" | null => {
+    if (!game.masonScore || !game.opponentScore) return null;
+
+    const mason = Number(game.masonScore);
+    const opponent = Number(game.opponentScore);
+
+    if (Number.isNaN(mason) || Number.isNaN(opponent)) return null;
+
+    if (mason > opponent) return "W";
+    if (mason < opponent) return "L";
+    return "T";
+  };
+
   const isHomeGame = (location: string): boolean =>
     location.includes("Dwire Field") ||
     location.includes("Mason Elementary");
@@ -226,6 +242,7 @@ END:VCALENDAR`.trim();
                 <th>Game</th>
                 <th>Date</th>
                 <th>Opponent</th>
+                <th>Score</th>
                 <th>Time</th>
                 <th>Location</th>
                 <th>Home/Away</th>
@@ -262,6 +279,26 @@ END:VCALENDAR`.trim();
                         />
                         {game.opponent}
                       </span>
+                    </td>
+
+                    <td data-label="Score" className="score-cell">
+                      {hasGameStarted(game) &&
+                        game.masonScore &&
+                        game.opponentScore && (
+                          <>
+                            {`${game.masonScore} - ${game.opponentScore}`}{" "}
+                            {(() => {
+                              const result = getGameResult(game);
+                              return result ? (
+                                <span
+                                  className={`game-result result-${result.toLowerCase()}`}
+                                >
+                                  {result}
+                                </span>
+                              ) : null;
+                            })()}
+                          </>
+                        )}
                     </td>
 
                     <td data-label="Time">{game.time}</td>

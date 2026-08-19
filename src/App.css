@@ -409,6 +409,31 @@ select {
   font-weight: 600;
 }
 
+.game-result {
+  display: inline-block;
+  min-width: 20px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}
+
+.result-w {
+  color: #16a34a;
+  background: rgba(22, 163, 74, 0.12);
+}
+
+.result-l {
+  color: #b91c1c;
+  background: rgba(185, 28, 28, 0.12);
+}
+
+.result-t {
+  color: #6b7280;
+  background: rgba(107, 114, 128, 0.12);
+}
+
 .table-wrapper {
   overflow-x: auto;
   border: 1px solid var(--border);
