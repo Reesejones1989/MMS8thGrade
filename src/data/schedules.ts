@@ -127,8 +127,8 @@ const schedules: Schedule = {
       location: "Mason Elementary",
       logo:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNtelwuVH_Z8Zkr0WS8Bch2aDldj2se0i7Q&s",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "0",
+      opponentScore: "0",
     },
         {
       game: "Game 1",
@@ -138,8 +138,8 @@ const schedules: Schedule = {
       location: "Lebanon High School",
       logo:
         "https://pbs.twimg.com/profile_images/1779961045525622784/XWltGCnu_400x400.jpg",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "0",
+      opponentScore: "14",
     },
 
             {
