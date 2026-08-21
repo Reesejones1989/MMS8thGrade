@@ -20,8 +20,8 @@ const schedules: Schedule = {
       time: "5:30",
       location: "Dwire Field",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUEyWBxq6junXjX0BnWy7c4DXXLsk9pvLNQdWUAvu3uA&s=10",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "0",
+      opponentScore: "0",
     },
     {
       game: "Game 2",
