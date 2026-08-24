@@ -28,7 +28,7 @@ const schedules: Schedule = {
       date: "8/27",
       opponent: "Colerain",
       time: "5:30",
-      location: "Colerain High School",
+      location: "Colerain Middle School",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOALdcVHydQV7nQPSPb2EY0KlysZaupSSLb5YXcpabtQ&s=10",
       masonScore: "",
       opponentScore: "",
@@ -147,7 +147,7 @@ const schedules: Schedule = {
       date: "8/25",
       opponent: "Hamilton",
       time: "5:30",
-      location: "Garfield Middle School",
+      location: "Garfield Junior High School",
       logo:
         "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1647812472/hamiltoncityschoolscom/no0jthbovtpbcta2zmye/BlueH-BlackOutline-BlackScript-WhiteOutline.png",
       masonScore: "",
