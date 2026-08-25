@@ -38,7 +38,7 @@ const players: Player[] = [
   { number: null, first: "Aditya", last: "Kakumanu" },
   { number: null, first: "Janani", last: "Keshav" },
   { number: 29, first: "Levi", last: "Key" },
-  { number: null, first: "Syed", last: "Musa" },
+  { number: 6, first: "Syed", last: "Musa" },
   { number: null, first: "Prabhav", last: "Patel" },
   { number: 86, first: "Taran", last: "Patel" },
   { number: 93, first: "Rhys", last: "Rodway" },
