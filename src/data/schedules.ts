@@ -150,8 +150,8 @@ const schedules: Schedule = {
       location: "Garfield Junior High School",
       logo:
         "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1647812472/hamiltoncityschoolscom/no0jthbovtpbcta2zmye/BlueH-BlackOutline-BlackScript-WhiteOutline.png",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "0",
+      opponentScore: "26",
     },
 
             {
