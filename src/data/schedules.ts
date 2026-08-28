@@ -30,8 +30,8 @@ const schedules: Schedule = {
       time: "5:30",
       location: "Colerain Middle School",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOALdcVHydQV7nQPSPb2EY0KlysZaupSSLb5YXcpabtQ&s=10",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "14",
+      opponentScore: "12",
       hudl:
         "",
     },
