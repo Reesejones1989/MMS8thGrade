@@ -162,8 +162,8 @@ const schedules: Schedule = {
       location: "Rapid Run Middle School",
       logo:
         "https://www.oakhillssports.com/layout/images/logo_og.png",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "0",
+      opponentScore: "0",
     },
 
             {
