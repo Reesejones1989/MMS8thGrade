@@ -43,8 +43,8 @@ const schedules: Schedule = {
       location: "Dwire Field",
       logo:
         "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1640868221/lakotaonlinecom/svj4brt17kbb76jzidpj/Ridge.eps",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "0",
+      opponentScore: "0",
       hudl:
         "",
     },
@@ -169,7 +169,7 @@ const schedules: Schedule = {
             {
       game: "Game 4",
       date: "9/08",
-      opponent: "Trotwood Madision",
+      opponent: "Trotwood Madison",
       time: "5:45",
       location: "Mason Elementary",
       logo:
