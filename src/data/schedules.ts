@@ -56,8 +56,8 @@ const schedules: Schedule = {
       location: "Dwire Field",
       logo:
         "https://www.fairfieldyouthfootball.com/images/favicon.png",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "30",
+      opponentScore: "6",
       hudl:
         "",
     },
@@ -66,7 +66,7 @@ const schedules: Schedule = {
       date: "9/17",
       opponent: "Oak Hills",
       time: "5:30",
-      location: "Oak Hills High School",
+      location: "Rapid Run Middle School",
       logo:
         "https://www.oakhillssports.com/layout/images/logo_og.png",
       masonScore: "",
@@ -186,8 +186,8 @@ const schedules: Schedule = {
       location: "Little Miami High School",
       logo:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWlcqtW6th4jWuiu1yF13DaIaVXOPfc-Q3vCHbE83b_A&s=10",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "22",
+      opponentScore: "0",
     },
             {
       game: "Game 6",
