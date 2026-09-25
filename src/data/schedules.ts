@@ -69,8 +69,8 @@ const schedules: Schedule = {
       location: "Rapid Run Middle School",
       logo:
         "https://www.oakhillssports.com/layout/images/logo_og.png",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "20",
+      opponentScore: "6",
       hudl:
         "",
     },
@@ -82,8 +82,8 @@ const schedules: Schedule = {
       location: "Dwire Field",
       logo:
         "https://resources.finalsite.net/images/f_auto,q_auto/v1640868218/lakotaonlinecom/icntz70fi8t6an6ionyb/Plains.eps",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "6",
+      opponentScore: "7",
       hudl:
         "",
     },
@@ -174,8 +174,8 @@ const schedules: Schedule = {
       location: "Mason Elementary",
       logo:
         "https://sportshub2-uploads.vnn-prod.zone/files/sites/1907/2017/08/08112645/TrotwoodMadisonLogo.png",
-      masonScore: "",
-      opponentScore: "",
+      masonScore: "0",
+      opponentScore: "56",
     },
 
             {
@@ -189,19 +189,9 @@ const schedules: Schedule = {
       masonScore: "22",
       opponentScore: "0",
     },
+   
             {
       game: "Game 6",
-      date: "9/29",
-      opponent: "Sycamore",
-      time: "5:30",
-      location: "Sycamore Junior High",
-      logo:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUEyWBxq6junXjX0BnWy7c4DXXLsk9pvLNQdWUAvu3uA&s=10",
-      masonScore: "",
-      opponentScore: "",
-    },
-            {
-      game: "Game 7",
       date: "10/06",
       opponent: "Harrison",
       time: "5:45",
