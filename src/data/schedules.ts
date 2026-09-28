@@ -93,7 +93,7 @@ const schedules: Schedule = {
       date: "09/30",
       opponent: "Hamilton",
       time: "5:30",
-      location: "Hamilton High School",
+      location: "Garfield Middle School",
       logo:
         "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1647812472/hamiltoncityschoolscom/no0jthbovtpbcta2zmye/BlueH-BlackOutline-BlackScript-WhiteOutline.png",
       masonScore: "",
