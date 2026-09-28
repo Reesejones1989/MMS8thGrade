@@ -156,7 +156,7 @@ const schedules: Schedule = {
 
             {
       game: "Game 3",
-      date: "9/01",
+      date: "9/29",
       opponent: "Oak Hills B",
       time: "5:00",
       location: "Rapid Run Middle School",
